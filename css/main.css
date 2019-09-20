@@ -36,6 +36,7 @@ nav li a:hover{
     display: none;
 }
 
+
 /* Agregando color (flecha)*/
 .hide-mobile {
     display: none;
@@ -61,7 +62,7 @@ p{
 
 .logo {
     width: 90px;
-    margin: 1em;
+    margin: 2em 1em;
 }
 
 .options {
@@ -87,6 +88,8 @@ p{
 .big-hero img {
     width: 150px;
 }
+
+
 
 .big-hero h2 {
     font-size: 1.875em;
@@ -121,9 +124,7 @@ Agregando los margenescen los iconos */
     text-decoration: none;
     font-size: 7em;
     justify-content: center;
-    padding: 10px; 
-
-
+    padding: 20px; 
 }
 
 
@@ -143,14 +144,23 @@ Agregando los margenescen los iconos */
     margin: 1em;
 }
 
+/* Agregar direccion, alineacion de los articulos*/
+
 .post ul {
     list-style: none;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2em;    
+    flex-direction: row; 
+    align-items: center;
+    display: contents;
 }
 
 .post ul li {
     min-height: 300px;
     max-width: 350px;
     margin: 2rem auto;
+
 }
 
 .post ul li article {
@@ -230,7 +240,16 @@ Agregando los margenescen los iconos */
     border: none;
     border-radius: 0px 2em;
     font-size: 1em;
-    width: 100%;
+    width: 50%;
+    justify-content: flex-end
+}
+
+.about .container .contact-form input:last-child{
+    border: none;
+    border-radius: 0px 1em;
+    font-size: 1.5em;
+    margin-bottom: 3em;
+    width: 50%;
 }
 
 /* Decorando placeholder */
