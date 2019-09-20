@@ -18,23 +18,38 @@ body {
     font-weight: 400;
 }
 
+/* Header */
 .header {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    width: 90%;
+    margin-left:5%; 
+}
+
+
+/* Agregando hover en el nav */
+nav li a:hover{
+    color:red;
 }
 
 .src-only {
     display: none;
 }
 
+/* Agregando color (flecha)*/
 .hide-mobile {
     display: none;
+    color:#0AC693;
 }
 
 p{
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
+}
+/* Alineando los parrafos */
+.about p{
+    text-align: justify;
 }
 
 .logo {
@@ -84,14 +99,16 @@ p{
     margin-top: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: center
-
+    justify-content: center;
 }
 
+/* Modificacion de los iconos: padding */
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 2.5em;
+    justify-content: center;
+    padding: 0; 
 }
 
 
