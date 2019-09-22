@@ -159,12 +159,7 @@ Agregando los margenescen los iconos */
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
-    width: 25rem;
-    height: 20rem;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    width: 100%;
 }
 
 .post article img{
@@ -203,13 +198,7 @@ Agregando los margenescen los iconos */
     font-size: 1.125em;
     margin: 2em;
 }
-.bio-info {
-    font-size: 16px;
-    padding: 2em;
-    text-align: center;
-    line-height: 25px;
-    letter-spacing: 2px;
-}
+
 .bio-info img{
     width: 200px;
 }
@@ -281,6 +270,7 @@ Agregando los margenescen los iconos */
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
+    padding-top: 2em;
 }
 
 footer .social-links {
@@ -313,20 +303,14 @@ footer .social-links {
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) { 
 
+
     /*Posicion en pantalla */
-    .post ul {
+    .post ul { 
         list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+        display: grid;  
     
-    .post ul li {
-        min-height: 350px;
-        max-height: 3500px;
-        margin: 1rem 2rem;
-        flex: 1 0 300px;
     }
+ 
 
     .logo {
         width: 150px;
@@ -370,13 +354,24 @@ footer .social-links {
         grid-column-end: 1fr;
         grid-row-end: 1fr;
 }
-/*Se modifica especificamente el boton para enviar informacion*/
+/* Boton de Contacto*/
 .contact-form input[type="submit"] {
         background-color: #f74442;
         font-weight: 400;
         color: white;
         font-size: 1rem;
         width: 15em;
+}
+.post ul {
+    list-style: none;
+    display: grid;  
+    grid-template-columns: auto auto auto;     
+}
+.post ul li {
+    min-height: 350px;
+    max-height: 3500px;
+    margin: 0 1em;
+    flex: 1 0 350px;
 }
 
 }
@@ -388,6 +383,20 @@ footer .social-links {
         width: 90%;
         margin: 0 auto;
         max-width: 1440px;
+    }
+
+    .big-hero img {
+        margin-top: 5em;
+    }
+
+    .about .container{
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article{
+        margin: 10px 50px;
     }
 
     /*HEADER*/
@@ -417,7 +426,20 @@ footer .social-links {
     .menu{
     margin-right: 0;
 }
+/*Modificando el about */
+.about .contact{
+    width: 35em;
+    margin-bottom: 2.5em;
+    margin-left: 1em;
+}
 
+.about .container{
+    width: 80em;
+}
 
-
+    .post ul {
+        list-style: none;
+        display: grid;  
+        grid-template-columns: auto auto auto;     
+    }
 }
