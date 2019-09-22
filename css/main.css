@@ -306,11 +306,34 @@ footer .social-links {
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) { 
-
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 768px;
+    }
+        /*HEADER*/
+        .header{
+            display: flex;
+            justify-content: space-around;
+        }
+        .green-area {
+            background-color: #0AC693; 
+            width:100%; 
+        }
+        .header img{
+            margin-top: 2em;
+            width: 180px;
+        }
+    
+        .header nav ul li a:hover {
+            color: #F74442;
+        }    
     /*Posicion en pantalla */
     .post ul { 
         list-style: none;
-        display: grid;      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;    
     }
 
     .logo {
@@ -375,7 +398,7 @@ footer .social-links {
 
        /*TODO: FALTA CSS */
 .container {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         max-width: 1024px;
     }
@@ -414,7 +437,7 @@ footer .social-links {
 
     /*TODO: FALTA CSS */
     .container {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         max-width: 1440px;
     }
@@ -448,14 +471,16 @@ footer .social-links {
         color: #F74442;
     }
 
-    nav{
-        margin-left: 25%;
-    }
+
 
     /* Logo de header */
     .logo {
     content: url(../images/isotipo.svg);
     transform: scale(.6 );
+    -webkit-transform: scale(.6 );
+    -moz-transform: scale(.6 );
+    -ms-transform: scale(.6 );
+    -o-transform: scale(.6 );
 }
 
 /*Modificando el about */
@@ -471,13 +496,16 @@ footer .social-links {
 }
 .post ul {
     list-style: none;
-    display: grid;      
+    display: flex;    
 }
 .post ul li {
     min-height: 350px;
     max-height: 3500px;
     margin: 0 1em;
-    flex: 1 0 350px;
+    flex: 1 0 300px;
+}
+.about div.bio-info, .about div.contact{
+    width: 50%;
 }
 
 }
