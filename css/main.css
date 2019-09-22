@@ -18,11 +18,13 @@ body {
     font-weight: 400;
 }
 
-/******* Header ***********
-Agrego margen para mover los elemento*/
+/******* Header ***********/
+
 .header {
     display: flex;
     justify-content: space-between;
+    padding: 1em;
+    font-size: 2em;
 }
 
 /* Agregando hover en el nav */
@@ -34,7 +36,6 @@ nav li a:hover{
     display: none;
 }
 
-/* Agregando color (flecha) y cambie ell tamanio de la letra en mobiles*/
 .hide-mobile {
     display: none;
     font-size: 1em;
@@ -47,7 +48,7 @@ nav li a:hover{
     color: #0ac693;
     margin-bottom: 1.5em;
 }
-
+/*Modifica los parrafos*/
 p{
     font-size: 0.75em;
     padding: 1rem;
@@ -119,7 +120,8 @@ Agregando los margenescen los iconos */
     justify-content: center;
     padding: 20px; 
 }
-
+/*****GREEN AREA************8888
+*/
 .green-area .post article {
     display: flexbox;
     box-sizing: content-box;
@@ -145,6 +147,7 @@ Agregando los margenescen los iconos */
 
 .post ul {
     list-style: none;
+    grid-template-columns: auto auto auto; 
 }
 
 .post ul li {
@@ -247,7 +250,8 @@ Agregando los margenescen los iconos */
 
 }
 
-/* Decorando placeholder */
+/* Decorando placeholder
+cOMPATIBILIDAD CON NAVEGADORES */
 
 ::-webkit-input-placeholder { 
     color: #D7DEE6; 
@@ -303,14 +307,11 @@ footer .social-links {
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) { 
 
-
     /*Posicion en pantalla */
     .post ul { 
         list-style: none;
-        display: grid;  
-    
+        display: grid;      
     }
- 
 
     .logo {
         width: 150px;
@@ -334,9 +335,43 @@ footer .social-links {
         display: flex;
         margin-top: 1em;
     }
+    .about>.container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 10px 30px;
+        align-content: space-between;
+    }
+    .about>.container>h2{
+        width: 100%;
+    }
+
+    .bio-info{
+        width: 50%;
+    }
+    .contact{
+
+        width: 50%;
+    }
 } 
 
 @media only screen and (min-width: 1024px) {
+
+        /*HEADER*/
+        .header{
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        .header img{
+            margin-top: 2em;
+            width: 180px;
+        }
+    
+        .header nav ul li a:hover {
+            color: #F74442;
+        }
+    
 
        /*TODO: FALTA CSS */
 .container {
@@ -365,7 +400,6 @@ footer .social-links {
 .post ul {
     list-style: none;
     display: grid;  
-    grid-template-columns: auto auto auto;     
 }
 .post ul li {
     min-height: 350px;
@@ -380,7 +414,7 @@ footer .social-links {
 
     /*TODO: FALTA CSS */
     .container {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         max-width: 1440px;
     }
@@ -407,7 +441,7 @@ footer .social-links {
 
     .header img{
         margin-top: 2em;
-        width: 180px;
+        width: 1440px;
     }
 
     .header nav ul li a:hover {
@@ -415,7 +449,7 @@ footer .social-links {
     }
 
     nav{
-        margin-left: 35%;
+        margin-left: 25%;
     }
 
     /* Logo de header */
@@ -423,9 +457,7 @@ footer .social-links {
     content: url(../images/isotipo.svg);
     transform: scale(.6 );
 }
-    .menu{
-    margin-right: 0;
-}
+
 /*Modificando el about */
 .about .contact{
     width: 35em;
@@ -433,13 +465,19 @@ footer .social-links {
     margin-left: 1em;
 }
 
+
 .about .container{
     width: 80em;
 }
+.post ul {
+    list-style: none;
+    display: grid;      
+}
+.post ul li {
+    min-height: 350px;
+    max-height: 3500px;
+    margin: 0 1em;
+    flex: 1 0 350px;
+}
 
-    .post ul {
-        list-style: none;
-        display: grid;  
-        grid-template-columns: auto auto auto;     
-    }
 }
