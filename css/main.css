@@ -373,7 +373,6 @@ footer .social-links {
         width: 50%;
     }
     .contact{
-
         width: 50%;
     }
 } 
@@ -470,7 +469,10 @@ footer .social-links {
     .header nav ul li a:hover {
         color: #F74442;
     }
-
+    .green-area {
+        background-color: #0AC693; 
+        width:100%; 
+    }
 
 
     /* Logo de header */
@@ -492,20 +494,20 @@ footer .social-links {
 
 
 .about .container{
-    width: 80em;
+    width: 100%;
 }
+
 .post ul {
     list-style: none;
-    display: flex;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;      
 }
 .post ul li {
     min-height: 350px;
     max-height: 3500px;
     margin: 0 1em;
-    flex: 1 0 300px;
-}
-.about div.bio-info, .about div.contact{
-    width: 50%;
+    flex: 1 0 3500px;
 }
 
 }
