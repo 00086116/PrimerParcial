@@ -23,8 +23,6 @@ Agrego margen para mover los elemento*/
 .header {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    margin-left:5%; 
 }
 
 /* Agregando hover en el nav */
@@ -152,7 +150,7 @@ Agregando los margenescen los iconos */
 .post ul li {
     min-height: 300px;
     max-width: 350px;
-    margin: 1em auto;
+    margin: 2rem auto;
 }
 
 .post ul li article {
@@ -161,6 +159,8 @@ Agregando los margenescen los iconos */
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
+    width: 25rem;
+    height: 20rem;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -197,19 +197,11 @@ Agregando los margenescen los iconos */
     margin-bottom: 2em;
 }
 
-.about .container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin-left:5%;
-    margin-right: 5%; 
-}
-
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
-    margin-bottom: 2em;
+    margin: 2em;
 }
 .bio-info {
     font-size: 16px;
@@ -235,7 +227,6 @@ Agregando los margenescen los iconos */
     flex-direction: column;
     text-align: left;
     padding: 0px 1em;
-    margin-bottom: 50%;
 }
 
 .contact * + * {
@@ -245,9 +236,8 @@ Agregando los margenescen los iconos */
 .contact-form {
     display: flex;
     flex-direction: column;
+    padding: 2em;
 }
-
-/* Agregando justificacion al final */
 
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem ;
@@ -255,10 +245,6 @@ Agregando los margenescen los iconos */
     border-radius: 0px 2em;
     font-size: 1em;
     width: 100%;
-    -webkit-border-radius: 0px 2em;
-    -moz-border-radius: 0px 2em;
-    -ms-border-radius: 0px 2em;
-    -o-border-radius: 0px 2em;
 }
 
 /* Boton de contactar */
@@ -269,10 +255,7 @@ Agregando los margenescen los iconos */
     font-size: 1.5em;
     margin-bottom: 3em;
     width: 50%;
-    -webkit-border-radius: 0px 1em;
-    -moz-border-radius: 0px 1em;
-    -ms-border-radius: 0px 1em;
-    -o-border-radius: 0px 1em;
+
 }
 
 /* Decorando placeholder */
@@ -365,34 +348,8 @@ footer .social-links {
         width: auto;
         height:auto;
         display: flex;
+        margin-top: 1em;
     }
-
-    .about .container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-/*Formulario se agrego margen */
-    label{
-        margin-left: 3em;
-    }
-
-    .about h2 {
-        align-self: flex-start;
-        width: 100vw;
-    }
-    .about .bio-info {
-        width: 50%;
-    }
-    .about .contact {
-        width: 50%;
-    }
-    .contact-form {
-        padding: 1em;
-    }
-
-    /*TODO: FALTA CSS */
 } 
 
 @media only screen and (min-width: 1024px) {
@@ -428,7 +385,7 @@ footer .social-links {
 
     /*TODO: FALTA CSS */
     .container {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         max-width: 1440px;
     }
@@ -459,4 +416,8 @@ footer .social-links {
 }
     .menu{
     margin-right: 0;
+}
+
+
+
 }
